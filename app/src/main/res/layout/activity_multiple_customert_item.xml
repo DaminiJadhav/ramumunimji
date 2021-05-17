@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeParent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+       android:id="@+id/relativelayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageviewOutsnadingProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_default_profile_image"
+            app:civ_border_color="@color/colorGrey"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <TextView
+            android:id="@+id/textviewOustandingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/imageviewOutsnadingProfile"
+            android:fontFamily="@font/ralewayregular"
+            android:textColor="#617db6"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="HardcodedText"
+            tools:text="C1401" />
+
+        <TextView
+            android:id="@+id/textviewOustandingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewOustandingId"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@id/imageviewOutsnadingProfile"
+            android:fontFamily="@font/ralewayregular"
+            android:textColor="#617db6"
+            android:textSize="@dimen/_14sdp"
+            tools:text="Ankur Prakash Shinde" />
+
+        <TextView
+            android:id="@+id/textview_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewOustandingName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@id/imageviewOutsnadingProfile"
+            android:fontFamily="@font/ralewayregular"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#617db6"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/relativelayoutProfile"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        />
+</RelativeLayout>
+

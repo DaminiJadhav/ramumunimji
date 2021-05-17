@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_enternumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittext_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageviewRamumunimji"
+            android:hint="@string/enter_mobile_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageviewRamumunimji"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_above="@+id/linearlayout_enternumber"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ramumunmjilogoforsplash" />
+
+    <RelativeLayout
+        android:id="@+id/rl_TermsAndCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_TermsAndConditions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_Termsandcondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCLickCheck"
+                android:textColor="#FFF" />
+            <!--            android:button="@drawable/checkbox_selector"-->
+            <!--            android:buttonTint="@color/mediumBlue"-->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_Termsandconditionne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkbox_Termsandcondition"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_6sdp">
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="By signing up, you agree to our "
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Terms "
+                    android:background="@color/black"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text=" of"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_termsandconditiontwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_Termsandconditionne"
+                android:layout_toRightOf="@+id/checkbox_Termsandcondition"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_6sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Service "
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/black"
+                    android:text="Privacy Policy,"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_three1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Data Usage Policy "
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+                <!--            android:text="including our"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_termsandconditiontwo"
+                android:layout_toRightOf="@+id/checkbox_Termsandcondition"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_6sdp">
+
+                <TextView
+                    android:id="@+id/textview_termsandcondition_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="including our cookie use."
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/_12sdp" />
+                <!--            android:text="Cookie Use."-->
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_TermsAndConditions"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle_shape"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

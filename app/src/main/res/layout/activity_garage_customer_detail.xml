@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <include layout="@layout/toolbar" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabshare"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:theme="@style/MyMaterialTheme"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Share"
+        app:icon="@drawable/ic_share" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/ic_default_profile_image"
+        android:padding="@dimen/_3sdp"
+        app:civ_border_color="@color/colorGrey"
+        app:civ_border_width="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_toStartOf="@+id/textview_customerId"
+        android:layout_toRightOf="@id/imageview_profile"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadprobold"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Ram Phutane"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
+
+    <ImageView
+        android:id="@+id/imageview_address"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_below="@id/textview_name"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_toRightOf="@id/imageview_profile"
+        android:src="@drawable/ic_address" />
+
+    <TextView
+        android:id="@+id/textview_address"
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_name"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toRightOf="@id/imageview_address"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Shri Rampur, Ahmednagar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <TextView
+        android:id="@+id/textview_addService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/curve_filled_white_background"
+        android:elevation="@dimen/_20sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/add_service"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_addService"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="0123456789"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_toLeftOf="@id/textview_VehicleType"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="@string/type_with_dots"
+        android:layout_toRightOf="@id/textview_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/textview_VehicleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/textview_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_VehicleType"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/textview_NO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_VehicleType"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_toLeftOf="@id/textview_Number"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="@string/number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+
+    <TextView
+        android:id="@+id/textview_customerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_addService"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_toLeftOf="@id/textview_id"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:singleLine="true"
+        android:text="@string/Customer_Id"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+
+    <ImageView
+        android:id="@+id/imageview_mobile"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/imageview_address"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/imageview_profile"
+        android:src="@drawable/ic_smartphone" />
+
+    <TextView
+        android:id="@+id/textview_mobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_address"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_toRightOf="@id/imageview_mobile"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/imageview_filter"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_below="@id/textview_VehicleType"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/ic_filter" />
+
+
+    <TextView
+        android:id="@+id/textview_totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_addService"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_toLeftOf="@+id/imageview_filter"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        tools:text="1234567890" />
+
+    <ImageView
+        android:id="@+id/imageview_rupee"
+        android:layout_width="@dimen/_9sdp"
+        android:layout_height="@dimen/_9sdp"
+        android:layout_below="@id/textview_addService"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_toLeftOf="@id/textview_totalAmount"
+        android:src="@drawable/ic_rupee_white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_merge"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/imageview_rupee"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:text="Balance : "
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_parent_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_mobileNumber"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_7sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_titleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_filled_white_background"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textviewHeader_Entry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/vehicle_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/textviewHeader_Debit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/due_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/textviewHeader_Credit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/Last_service_Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_parent_ll"
+        android:visibility="visible"
+        tools:listitem="@layout/activity_garage_detail_list_item" />
+
+    <TextView
+        android:id="@+id/textView_PeaseAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/myriadprobold"
+        android:text="@string/Please_add_transaction"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        android:visibility="gone" />
+</RelativeLayout>

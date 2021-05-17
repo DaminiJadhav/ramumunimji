@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home"/>
+        <item
+            android:id="@+id/nav_outStanding"
+            android:icon="@drawable/ic_outstanding"
+            android:title="@string/menu_outstanding" />
+        <!--<item
+            android:id="@+id/nav_payment_received"
+            android:icon="@drawable/ic_sale"
+            android:title="@string/menu_payment_received" />
+        <item
+            android:id="@+id/nav_sale"
+            android:icon="@drawable/ic_ticket"
+            android:title="@string/menu_sale" />
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/ic_expense"
+            android:title="@string/menu_expenses" />-->
+        <item
+            android:id="@+id/nav_expensesReports"
+            android:icon="@drawable/ic_expesnereports"
+            android:title="@string/menu_expense_reports"
+            />
+        <item
+            android:id="@+id/nav_salesReports"
+            android:icon="@drawable/ic_expesnereports"
+            android:title="@string/menu_sales_reports" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_report"
+            android:title="@string/menu_reports" />
+        <item
+            android:id="@+id/nav_other"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_other" />
+        <item
+            android:id="@+id/nav_crop"
+            android:iconTint="@color/black"
+            android:icon="@drawable/ic_crops"
+            android:title="@string/crop" />
+        <item
+            android:id="@+id/nav_garage"
+            android:icon="@drawable/ic_maintenance"
+            android:title="@string/vehicle_service_report" />
+        <item
+            android:id="@+id/nav_add_customer"
+            android:icon="@drawable/ic_add_user"
+            android:title="@string/menu_add_customer" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_question"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_setting" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>

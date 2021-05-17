@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "934548928146",
+    "firebase_url": "https://posbilling-ddc73.firebaseio.com",
+    "project_id": "posbilling-ddc73",
+    "storage_bucket": "posbilling-ddc73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934548928146:android:b6a534d3e2f1eed14a984b",
+        "android_client_info": {
+          "package_name": "com.posbilling.posbillingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934548928146-b0so9pffmcmlehe50ttjui3qhvj3qr30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTrRziFfHZUxO1LIYpCM8KPJOp8sgssyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934548928146-b0so9pffmcmlehe50ttjui3qhvj3qr30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

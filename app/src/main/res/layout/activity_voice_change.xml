@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/imageviewRamumunimji"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_next" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textview_ramumunimji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/colabreg"
+        android:text="@string/RAMU_MUNIMJI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_logo"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_46sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/ll_outstanding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageview_outsnding"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_outstanding"
+                        android:tint="@color/darkBlue" />
+
+                    <TextView
+                        android:id="@+id/textviewOutstanding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageview_outsnding"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="5"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/colabreg"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/menuoutstanding"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewOustMic"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_toEndOf="@+id/textviewOutstanding"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_radio"
+                        android:tint="@color/darkBlue"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_Debit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageview_debit"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_ticket"
+                        android:tint="@color/darkBlue" />
+
+                    <TextView
+                        android:id="@+id/textviewDebit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageview_debit"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/colabreg"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="@string/menu_sale"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewDevitMic"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_radio"
+                        android:tint="@color/darkBlue"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_debit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/ll_first"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/darkBlue"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_debit"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/ll_Credit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_debit"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:layout_weight="1"
+                    android:weightSum="8">
+
+                    <ImageView
+                        android:id="@+id/imageview_Credit"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_sale"
+                        android:tint="@color/darkBlue" />
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/textviewCredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageview_Credit"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/colabreg"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="@string/amount_received"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewMicCredit"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_radio"
+                        android:tint="@color/darkBlue"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_Expense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_credit"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageview_Expenses"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_expense"
+                        android:tint="@color/darkBlue" />
+
+                    <TextView
+                        android:id="@+id/textviewExpenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageview_Expenses"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="5"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/colabreg"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="@string/expenses"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <ImageView
+                        android:id="@+id/imageviewMicExpense"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_radio"
+                        android:tint="@color/darkBlue"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider_expenses"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/darkBlue"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageview_pray"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/divider_expenses"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:src="@drawable/ic_pray"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview_pray"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/colabreg"
+                android:text="@string/Welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_24sdp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

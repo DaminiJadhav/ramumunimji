@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">Ramu-Munimji</string>
+    <string name="ankur">अनकुर</string>
+    <string name="enter_phone_number">फोन नंबर प्रविष्ट करा</string>
+    <string name="please_enter_your_mobile_number">कृपया आपला मोबाइल नंबर प्रविष्ट करा</string>
+    <string name="please_enter_otp">कृपया आपल्या नोंदणीकृत मोबाइल क्रमांकावर प्राप्त ओटीपी प्रविष्ट करा.</string>
+    <string name="title_activity_dashboard">ActivityDashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hari Om Varieties</string>
+    <string name="nav_header_subtitle">1234567890</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_customer_name">ग्राहक नाव प्रविष्ट करा.</string>
+    <string name="customer_name">ग्राहक नाव</string>
+    <string name="supplier_name">सप्लायर नाव</string>
+    <string name="vehicle_type">वाहन प्रकार निवडा.</string>
+    <string name="vehicle_type_name">प्रकार</string>
+    <string name="vehicle_model">वाहन मॉडेल प्रविष्ट करा</string>
+    <string name="vehicle_model_name">मॉडेल</string>
+    <string name="Vehicle_name">वाहन नाव</string>
+    <string name="enter_owner_name">नाव</string>
+
+<!--    <string name="enter_owner_name">मालकाचे नाव प्रविष्ट करा.</string>-->
+    <string name="enter_address">पत्ता प्रविष्ट करा.</string>
+    <string name="Address">पत्ता</string>
+    <string name="buisness_name">व्यवसायाचे नाव.</string>
+    <string name="buisness">व्यवसाय नाव</string>
+    <string name="buisnesstype">व्यवसाय प्रकार</string>
+    <string name="shop_id">व्यवसाय Id</string>
+    <string name="select_crop">पीक निवडा</string>
+    <string name="vehicle_number">वाहन क्रमांक</string>
+    <string name="vehicle_number_name">क्रमांक</string>
+    <string name="vehicle_number_with_dots">वाहन क्रमांक : </string>
+    <string name="number">No. : </string>
+    <string name="enter_amount">रक्कम प्रविष्ट करा.</string>
+    <string name="enter_credit_amount">क्रेडिट रक्कम प्रविष्ट करा</string>
+    <string name="enter_debit_amount">डेबिट रक्कम प्रविष्ट करा</string>
+    <string name="enter_Litre">लिटर प्रविष्ट करा</string>
+    <string name="enter_purpose">व्यवहार तपशील प्रविष्ट करा</string>
+    <string name="invalid_amount">अवैध रक्कम</string>
+    <string name="no_of_acre">एकरांची संख्या</string>
+    <string name="enter_period">कालावधी प्रविष्ट करा (महिन्यांत)</string>
+    <string name="three_months">महिने निवडा</string>
+    <string name="next_service_date">पुढील सेवा तारीख</string>
+    <string name="comments">कॅमेन्ट्स</string>
+    <string name="Vehicle_service_particculars">कॅमेन्ट्स</string>
+    <string name="current_km_Milage">किलोमीटर मायलेज</string>
+    <string name="current_km_Milage_name">मायलेज</string>
+    <string name="submit">जतन करा</string>
+    <string name="update">अपडेट</string>
+    <string name="delete">डिलीट</string>
+    <string name="Customer_updated">ग्राहक रेकॉर्ड जतन केले</string>
+    <string name="Supplier_updated">सप्लायर रेकॉर्ड जतन केले</string>
+    <string name="transaction_delete">व्यवहार डिलीट केला</string>
+    <string name="save">ओके</string>
+    <string name="data_save">प्रोफाइल डेटा सेव्ह  केला</string>
+    <string name="enter_village">गावचे नाव प्रविष्ट करा.</string>
+    <string name="Send_sms_to_customer">ग्राहकांना एसएमएस पाठवा</string>
+    <string name="Send_sms_to_supplier">सप्लायरला एसएमएस पाठवा</string>
+    <string name="enter_taluka">तालुक्याचे नाव प्रविष्ट करा.</string>
+    <string name="enter_district">जिल्हाचे नाव प्रविष्ट करा.</string>
+    <string name="select_state">राज्य निवडा.</string>
+    <string name="State">राज्य</string>
+    <string name="select_customer">ग्राहक निवडा</string>
+    <string name="enter_country">देशाचे नाव प्रविष्ट करा.</string>
+    <string name="Country">देश</string>
+    <string name="enter_mobile_number">मोबाइल नंबर प्रविष्ट करा.</string>
+    <string name="Select_buisness_type">बिझनेस प्रकार निवडा</string>
+    <string name="We_need_permission">आम्हाला प्रतिमा टिपण्यासाठी परवानगी आवश्यक आहे.</string>
+    <string name="We_need_permission_Audio">आम्हाला ऑडिओ कॅप्चर करण्यासाठी परवानगी आवश्यक आहे</string>
+    <string name="Please_permit_the_permission_through">कृपया याद्वारे परवानगी द्या</string>
+    <string name="Settings_screen">सेटिंग्ज स्क्रीन.</string>
+    <string name="Permit_Manually">परवानगी स्वहस्ते</string>
+    <string name="select_file">फाईल निवडा.</string>
+    <string name="camera">फोटो काढा</string>
+    <string name="you_are_offline">आपण ऑफलाइन आहात. इंटरनेट कनेक्शन तपासा</string>
+    <string name="gallery">गॅलरीमधून निवडा</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="Login_failed">Login failed... please try again</string>
+    <string name="cancel_two">कॅन्सल</string>
+    <string name="maharashtra">महाराष्ट्र</string>
+    <string name="India">भारत</string>
+    <string name="enter_Expense">खर्च प्रकार प्रविष्ट करा</string>
+    <string name="Expense_Type">खर्चाचा प्रकार</string>
+    <string name="Expense_Amount">खर्च रक्कम</string>
+
+    <string name="expense_purpose">खर्चाचा तपशील प्रविष्ट करा</string>
+    <string name="enter_id">आयडी प्रविष्ट करा</string>
+    <string name="select_Date">तारीख निवडा.</string>
+    <string name="Crop_plantation_date">पीक लागवड तारीख</string>
+    <string name="service_date">सर्विस तारीख</string>
+    <string name="service_date_name">तारीख</string>
+    <string name="hello_im_hearing_you">नमस्कार मी तुम्हाला ऐकत आहे!</string>
+
+
+
+    <string name="menu_home">मुख्यपृष्ठ</string>
+    <string name="profile">ग्राहक प्रोफाइल</string>
+    <string name="supplier_profile">सप्लायर प्रोफाइल</string>
+    <string name="Filter_screen">फिल्टर</string>
+    <string name="add_service_header">न्यू सर्व्हिस रेकॉर्ड</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name = "RAMU_MUNIMJI">Ramu Munimji</string>
+    <string name="PLEASE_ENTER_MOBILE_NUMBER">कृपया मोबाइल नंबर प्रविष्ट करा.</string>
+    <string name="please_check_internet">आपण ऑफलाइन आहात. इंटरनेट कनेक्शन तपासा</string>
+    <string name="please_check_internet_and_try_again">इंटरनेट कनेक्शन तपासा. पुन्हा प्रयत्न करा.</string>
+    <string name="File_downloaded">पीडीएफ फाईल डाउनलोडेड.</string>
+    <string name="Downloading">डाउनलोड करत आहे</string>
+    <string name="crop_added">पीक रेकॉर्ड जतन  केले</string>
+    <string name="please_enter_10_digit_mobile_number">कृपया 10 अंकी मोबाइल नंबर प्रविष्ट करा.</string>
+    <string name="please_enter_4_digit_otp">कृपया 4 अंकी ओटीपी प्रविष्ट करा.</string>
+    <string name="we_sent_otp">We have sent an OTP on your</string>
+    <string name="mobile_number">mobile number</string>
+    <string name="select_contact">संपर्क निवडा</string>
+    <string name="mobile">मोबाईल</string>
+    <string name="Please_select_other_customer">कृपया अन्य ग्राहक निवडा</string>
+
+    <string name="oustanding_dot">थकबाकी : </string>
+    <string name="menu_outstanding">थकबाकी रिपोर्ट</string>
+    <string name="menuoutstanding">थकबाकी</string>
+    <string name="customer_outstanding">ग्राहक\nथकबाकी</string>
+    <string name="customer_outstanding_menus">उधारी</string>
+    <string name="minus">वजा  </string>
+    <string name="menu_payment_received">जमा</string>
+    <string name="menu_sale">विक्री</string>
+    <string name="sales">विक्री</string>
+    <string name="menu_salereport">सेल्स रिपोर्ट</string>
+    <string name="menu_expenses">किरकोळ खर्च</string>
+    <string name="menu_reports">अहवाल</string>
+    <string name="menu_purchase">खरेदी</string>
+    <string name="purchase">माल\nखरेदी</string>
+    <string name="menu_purchaseReport">खरेदी रिपोर्ट</string>
+    <string name="supplier_outstanding">सप्लायर\nथकबाकी</string>
+    <string name="menu_purchasePaid">रक्कम पेड</string>
+    <string name="menu_other">इतर</string>
+    <string name="menu_add_customer">ग्राहक जोडा</string>
+    <string name="merge">विलीन</string>
+    <string name="yes">होय</string>
+    <string name="no">नाही</string>
+    <string name="merge_confirmation">आपली खात्री आहे की आपण विलीन करू इच्छिता?</string>
+    <string name="delete_confirmation">आपली खात्री आहे की आपण डिलीट करू इच्छिता?</string>
+    <string name="menu_help">संपर्क</string>
+    <string name="menu_setting">प्रोफाइल</string>
+    <string name="menu_logout">लॉगआऊट</string>
+    <string name="add_crop">पीक जोडा</string>
+
+    <string name="contact_mail">customercare@Ramumunimji.com</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="contact_one">+91 72768 38431</string>
+    <string name="contact_two">+91 91453 20664</string>
+    <string name="Total_Customers">एकूण ग्राहक</string>
+    <string name="Total_suppliers">एकूण सप्लायर्स</string>
+    <string name="total">एकूण :  </string>
+    <string name="total_without_dots">एकूण  </string>
+    <string name="Total_Outstanding">एकूण थकबाकी</string>
+    <string name="search">शोधा</string>
+    <string name="outstanding_summary">ग्राहक थकबाकी रिपोर्ट</string>
+    <string name="supplier_summary">सप्लायर्स रिपोर्ट</string>
+    <string name="thisfieldisforoflineuse">ही फील्ड केवळ ऑफलाइन वापरासाठी आहेत.</string>
+    <string name="vehicle_maintainace">गाडी सर्व्हिस रेकॉर्ड</string>
+    <string name="menu_expense_reports">किरकोळ खर्च रिपोर्ट</string>
+    <string name="expense_report">खर्च रिपोर्ट</string>
+    <string name="menu_sales_reports">सेल्स रिपोर्ट</string>
+    <string name="crop">पीक</string>
+    <string name="custom_tab_menu">मेनू</string>
+    <string name="custom_tab_report">रिपोर्ट्स</string>
+    <string name="crop_master_Data_is_not_allowed">Crop master data is not assigned to you,  please contact customer care</string>
+    <string name="garage">गॅरेज</string>
+    <string name = "type_with_dots">प्रकार : </string>
+    <string name="due_date_with_dots">देय तारीख : </string>
+    <string name ="vehicle_service_report">गाडी सर्विस रिपोर्ट</string>
+    <string name="villageName">गावचे नाव</string>
+    <string name="Village">गाव</string>
+    <string name="TalukaName">तालुक्याचे नाव</string>
+    <string name="Taluka">तालुका</string>
+    <string name="DistrictName">जिल्हा नाव</string>
+    <string name="District">जिल्हा</string>
+    <string name="from">पासून</string>
+    <string name="to">पर्यंत</string>
+    <string name="month">महिना</string>
+    <string name="Year">वर्ष</string>
+    <string name="SeeAll">सर्व पाहा</string>
+    <string name="Customer_Id">Id :</string>
+    <string name="vehicle_Type">Vehicle type : </string>
+    <string name="Merge">Merge</string>
+    <string name="Add_crop">Add crop</string>
+    <string name="add_service">Add Service</string>
+    <string name="Entry">यादी</string>
+    <string name="Ascending">चढता क्रम</string>
+    <string name="Descending">उतरता क्रम</string>
+    <string name="upto500">500 पर्यंत</string>
+    <string name="upto1000">1000 पर्यंत</string>
+    <string name="upto5000">5000 पर्यंत</string>
+    <string name="upto10000">10000 पर्यंत</string>
+    <string name="selectamount">रक्कम निवडा</string>
+    <string name="Crop_name">पिकाचे नाव</string>
+    <string name="vehicle_name">वाहनाचे नाव</string>
+    <string name="crop_details">पीक तपशील</string>
+    <string name="vehilce_details">वाहन तपशील</string>
+    <string name="litre">लिटर</string>
+    <string name="remark">नोंद</string>
+    <string name="Details">तपशील</string>
+    <string name="you_will_receive">तुम्ही द्याल</string>
+    <string name="you_will_receive_two">तुम्हांला मिळेल</string>
+    <string name="you_will_pay">तुम्ही द्याल</string>
+
+    <string name="acre">एकर</string>
+    <string name="Debit">विक्री</string>
+    <string name="Purchase_Amount">खरेदी रक्कम</string>
+    <string name="Purchase">खरेदी</string>
+    <string name="Debit_rs">विक्री (रु.)</string>
+    <string name="rupee">रुपये</string>
+    <string name="Pesticides">कीटकनाशके</string>
+    <string name="due_date">देय तारीख</string>
+    <string name="Pesticides_two">कीटकनाशके : </string>
+    <string name="Credit">जमा</string>
+    <string name="Amount_Paid">पैसे दिले</string>
+    <string name="amount_received">रक्कम\nमिळाली</string>
+    <string name="fertiliser_two">खते : </string>
+    <string name="fertiliser">खते</string>
+    <string name="Last_service_Date">सेवा तारीख</string>
+    <string name="expenses">खर्च</string>
+    <string name="outstanding_list">ग्राहक थकबाकी तपशील</string>
+    <string name="supplier_list">सप्लायर थकबाकी तपशील</string>
+    <string name="ID">ID : </string>
+    <string name="debit_amount">डेबिट रक्कम</string>
+    <string name="credit_amount">क्रेडिट रक्कम</string>
+    <string name="date">तारीख</string>
+    <string name="Planted">Planted : </string>
+    <string name="Duration">Duration : </string>
+    <string name="voice_recognization_start">Im hearing You</string>
+    <string name="Voice_recording_starts">व्हॉइस रेकॉर्डिंग सुरू होते, आता बोला …</string>
+    <string name="tell">सांगा</string>
+    <string name="tell_dot">सांगा.</string>
+    <string name="name">नाव</string>
+    <string name="Name_captial">नाव</string>
+    <string name="Im_hearing_You">मी तुम्हाला ऐकत आहे!</string>
+    <string name="ok">ठीक</string>
+    <string name="amount">रक्कम</string>
+    <string name="amountDot">रक्कम : </string>
+    <string name="Welcome">सुस्वागतम्</string>
+
+
+    <!-- TODO: This Are the list of speaking statement by device -->
+    <string name="please_tell_customer_name">ग्राहकांचे नाव सांगा.</string>
+    <string name="please_tell_supplier_name">सप्लायर नाव सांगा.</string>
+    <string name="please_tell_expense">खर्च प्रकार सांगा</string>
+    <string name="please_tell_amount_to_be_enter">रक्कम सांगा.</string>
+    <string name="please_say_save_or_cancel">ओके किंवा कॅन्सल म्हणा</string>
+    <string name="record_saved">वाहन रेकॉर्ड जतन केले</string>
+    <string name="please_tell_purpose">व्यवहार तपशील सांगा</string>
+    <string name="please_tell_expense_purpose">खर्चाचा तपशील सांगा</string>
+    <string name="please_tell_purchase_purpose">खरेदीची माहिती सांगा</string>
+    <string name="please_tell_liter">लिटर सांगा.</string>
+    <string name="Say_ok_to_save">ठीक म्हणा.</string>
+    <string name="Data_saved">व्यवहार जतन  केला</string>
+    <string name="Tell_purpose">उद्देश सांगा.</string>
+    <string name="purpose">उद्देश</string>
+    <string name="transaction">व्यवहार</string>
+
+    <!-- TODO: This Are the error strings -->
+    <string name="please_enter_customer_name">कृपया ग्राहक नाव प्रविष्ट करा.</string>
+    <string name="Cutomer_not_found">ग्राहक उपलब्ध नाही.</string>
+    <string name="Supplier_not_found">सप्लायर उपलब्ध नाही.</string>
+    <string name="New_customer_will_be_created">नवीन ग्राहक जोडला जाईल</string>
+    <string name="New_supplier_will_be_created">नवीन सप्लायर जोडला जाईल</string>
+    <string name="transaction_cancelled">व्यवहार रद्द केला</string>
+    <string name="transaction_id">व्यवहार आयडी</string>
+    <string name="please_enter_amount">कृपया रक्कम प्रविष्ट करा.</string>
+    <string name="please_enter_sale_amount">कृपया विक्री रक्कम प्रविष्ट करा.</string>
+
+    <string name="sale_amount">विक्री रक्कम</string>
+    <string name="amount_receive">जमा रक्कम</string>
+    <string name="enter_amount_receive">जमा रक्कम सांगा.</string>
+    <string name="enter_sale_amount">विक्री रक्कम सांगा.</string>
+    <string name="please_tell_purchase_amount">खरेदी रक्कम सांगा</string>
+    <string name="please_tell_amount_paid_purpose">खरेदी पेड तपशील सांगा</string>
+
+    <string name="please_tell_paid_amount">रक्कम पेड सांगा</string>
+
+
+
+    <string name="purchase_amount">खरेदी रक्कम</string>
+    <string name="amount_paid">पैसे दिले</string>
+    <string name="details">तपशील</string>
+
+
+    <string name="remark_bill_number">नोंद / बिल क्रमांक</string>
+    <string name="expense_bill_number">खर्चाचा तपशील/बिल क्रमांक</string>
+    <string name="expense_report_tab_remark">तपशील</string>
+    <string name="Please_add_customer">कृपया ग्राहक जोडा</string>
+    <string name="Please_add_transaction">कृपया व्यवहार जोडा.</string>
+    <string name="something_went_wrong_please_try_again">Something went wrong...Please try again</string>
+    <string name="marathi_language_tts_is_not_supported">आपल्या फोन मध्ये मराठी व्हॉइस डेटा इन्स्टॉल नाही।  मराठी व्हॉइस  वापरण्यासाठी, कृपया मराठी/हिंदी व्हॉइस डेटा इन्स्टॉल करा.
+Setting --> Language and Inputs -->Text-to-speech-output -> Settings icon ->Install voice data -> Select Hindi or Marathi language.\n\n
+आपण मराठी/हिंदी व्हॉइस इन्स्टॉल केल्याशिवाय अ‍ॅप वापरणे सुरू ठेवू शकता, केवळ व्हॉइस वैशिष्ट्य कार्य करू शकत नाही.</string>
+    <string name="marathi_language_Available_update">नमस्कार, आम्ही आपल्याला हे सांगण्यास आनंदित आहोत की आपल्या सध्याच्या सॉफ्टवेअर अपडेटमुळे आपण कोणत्याही अडचणीशिवाय मराठी भाषा वापरु शकता.</string>
+    <string name="Rs">Rs </string>
+    <string name="tip">टीप</string>
+    <string name="send_sms_to_customer">ग्राहकांना एसएमएस पाठवा</string>
+
+
+
+
+</resources>

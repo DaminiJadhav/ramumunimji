@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.posbilling.posbillingapplication">
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<!--    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="application/vnd.android.package-archive" />
+        </intent>
+    </queries>-->
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+
+
+    <application
+        android:name=".lib.AppPOS"
+        android:allowBackup="false"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity"
+        tools:replace="android:icon,android:supportsRtl,android:allowBackup">
+
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.dashboard.ActivityDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.edittransaction.ActivityEditTransaction"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.purchasemerge.ActivityPurchaseMerge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.otp.ActivityOtp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.supplieractivity.ActivitySupplierOutstandingList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.webview.ActivityWebview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.editsupplier.ActivityEditSupplier"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="layoutDirection|locale"
+            />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.outstandinglist.ActivityOutstandingList"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.cropdetail.ActivityCropDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.editcustomer.ActivityEditCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--            <action android:name="android.intent.action.VIEW"/>
+                            <category android:name="android.intent.category.DEFAULT"/>
+                            <category android:name="android.intent.category.BROWSABLE"/>
+                            <data android:scheme="https" android:host="ramumunimji.android.com"
+                                android:path="/splash" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.splash.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.activityparentreport.ActivityParentReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.settingcontainer.ActivitySettingContainer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+<!--            <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https" android:host="ramumunimji.android.com"
+                android:path="/container" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.homeactivitytwo.HomeActivityTwo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.merge.ActivityMerge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.mainactivity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.garagedcustomerdetail.ActivityGarageCustomerDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.login.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.filter.ActivityFilter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.addgarage.ActivityAddGarage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.contactus.ActivityContactUs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:configChanges="layoutDirection|locale"
+            android:name=".activity.cropregistration.ActivityCropRegistration"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.posbilling.posbillingapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"
+        />
+
+</manifest>

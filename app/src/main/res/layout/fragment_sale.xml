@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_enterCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <ImageView
+            android:id="@+id/imageview_mic_enter_name"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:src="@drawable/ic_radio" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageview_mic_enter_name"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/white_curve_corner_background">
+
+            <ImageView
+                android:id="@+id/imageview_User"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_user" />
+
+            <EditText
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/edittext_enterCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_toRightOf="@+id/imageview_User"
+                android:background="@null"
+                android:maxLength="300"
+                android:hint="@string/enter_customer_name"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout_enterAmount"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/relativelayout_enterCustomerName"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imageview_mic_enter_amount"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:src="@drawable/ic_radio" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageview_mic_enter_amount"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/white_curve_corner_background">
+
+            <ImageView
+                android:id="@+id/imageview_rupee"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_rupee" />
+
+            <EditText
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/edittext_enterAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_toRightOf="@+id/imageview_rupee"
+                android:background="@null"
+                android:hint="@string/enter_amount"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relativelayout_enterLitre"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/relativelayout_enterAmount"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imageview_mic_enter_Litre"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:src="@drawable/ic_radio" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageview_mic_enter_Litre"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/white_curve_corner_background">
+
+            <ImageView
+                android:id="@+id/imageview_Litre"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_rupee" />
+
+            <EditText
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/edittext_enterLitre"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_toRightOf="@+id/imageview_Litre"
+                android:background="@null"
+                android:hint="@string/enter_Litre"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_enterPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_enterLitre"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imageview_mic_enter_purpose"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:src="@drawable/ic_radio" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageview_mic_enter_purpose"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/white_curve_corner_background">
+
+            <ImageView
+                android:id="@+id/imageview_purpose"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_mission" />
+
+            <EditText
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/edittext_enterpurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imageview_purpose"
+                android:background="@null"
+                android:hint="@string/enter_purpose"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/submit"
+            android:layout_margin="@dimen/_7sdp"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/myriadprobold"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:elevation="@dimen/_30sdp"
+        android:padding="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_sales_reports"
+                android:textColor="@color/new_text_color"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_salesReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_sale"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_30sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_outstandingreport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageview_outstandingreport"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_43sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_4sdp"
+                            android:src="@drawable/ic_report" />
+
+                        <TextView
+                            android:id="@+id/textviewoutstandingreport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/imageview_outstandingreport"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/colabreg"
+                            android:gravity="bottom|center"
+                            android:maxLines="2"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:text="@string/customer_outstanding"
+                            android:textColor="@color/grey_text_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/imageviewOustReportMic"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/textviewoutstandingreport"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_radio"
+                            android:tint="@color/darkBlue"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_30sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_saleReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_credit"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageview_saleReport"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_report" />
+
+
+                        <TextView
+                            android:id="@+id/textviewsaleReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageview_saleReport"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="5"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/colabreg"
+                            android:gravity="bottom|center"
+                            android:maxLines="2"
+                            android:text="@string/menu_salereport"
+                            android:textColor="@color/grey_text_color"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <!--<TextView
+                            android:id="@+id/textviewsaleReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageview_saleReport"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_weight="5"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/colabreg"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="bottom|center"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="@string/menu_salereport"
+                            android:textColor="@color/grey_text_color"
+                            android:textSize="@dimen/_13sdp"
+                            />-->
+
+                        <ImageView
+                            android:id="@+id/imageviewMicsaleReport"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_radio"
+                            android:tint="@color/darkBlue"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_purchaseReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_logo"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:elevation="@dimen/_30sdp"
+        android:padding="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_purchaseReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_purchaseReport"
+                android:textColor="@color/new_text_color"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_purchaseReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_purchaseReport"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_30sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_purchasereport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="8">
+
+                        <ImageView
+                            android:id="@+id/imageview_purchasereport"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_report" />
+
+                        <TextView
+                            android:id="@+id/textviewpurchaserReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/imageview_purchasereport"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/colabreg"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="bottom|center"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="@string/supplier_outstanding"
+                            android:textColor="@color/grey_text_color"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <ImageView
+                            android:id="@+id/imageviewMicpurchaseReport"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_radio"
+                            android:tint="@color/darkBlue"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_expenseReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_purchaseReport"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:elevation="@dimen/_30sdp"
+        android:padding="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_expenseReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_expense_reports"
+                android:textColor="@color/new_text_color"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_expensereportTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_expenseReport"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_30sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_expensereport"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="8">
+
+                        <ImageView
+                            android:id="@+id/imageview_expensereport"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_report" />
+
+                        <TextView
+                            android:id="@+id/textviewExpenserReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/imageview_expensereport"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/colabreg"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="bottom|center"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="@string/expense_report"
+                            android:textColor="@color/grey_text_color"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <ImageView
+                            android:id="@+id/imageviewMicExpenseReport"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_radio"
+                            android:tint="@color/darkBlue"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textview_ramumunimji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/colabreg"
+        android:text="@string/RAMU_MUNIMJI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>

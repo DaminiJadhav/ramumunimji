@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.voice.FragmentVoice"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_voice" />
+
+    <fragment
+        android:id="@+id/nav_outStanding"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.outstanding.FragmentOutstanding"
+        android:label="@string/menu_outstanding"
+        tools:layout="@layout/fragment_outstanding" />
+
+    <!--<fragment
+        android:id="@+id/nav_payment_received"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.paymentreceived.FragmentPaymentReceived"
+        android:label="@string/menu_payment_received"
+        tools:layout="@layout/fragment_payment_received" />
+
+    <fragment
+        android:id="@+id/nav_sale"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.sale.FragmentSale"
+        android:label="@string/menu_sale"
+        tools:layout="@layout/fragment_sale" />
+
+    <fragment
+        android:id="@+id/nav_expenses"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.expenses.FragmentExpenses"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />-->
+
+    <fragment
+        android:id="@+id/nav_crop"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.crop.FragmentCropSummury"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/crop_customerlist" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.reports.FragmentReports"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/nav_expensesReports"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.expenesreport.FragmentExpenseReport"
+        android:label="@string/menu_expense_reports"
+        tools:layout="@layout/activity_exoense_reports" />
+
+    <fragment
+        android:id="@+id/nav_salesReports"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.salesreport.FragmentSaleReports"
+        android:label="@string/menu_expense_reports"
+        tools:layout="@layout/activity_sales_report" />
+
+
+    <fragment
+        android:id="@+id/nav_other"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.other.FragmentOther"
+        android:label="@string/menu_other"
+        tools:layout="@layout/fragment_other" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.help.FragmentHelp"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_garage"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.garage.FragmentGarage"
+        android:label="@string/menu_help"
+        tools:layout="@layout/activity_vehicle_summury" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.setting.FragmentSetting"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/activity_setting" />
+    <fragment
+        android:id="@+id/nav_add_customer"
+        android:name="com.posbilling.posbillingapplication.activity.dashboard.ui.addcustomer.FragmentAddCustomer"
+        android:label="@string/menu_add_customer"
+        tools:layout="@layout/fragment_add_customer" />
+</navigation>

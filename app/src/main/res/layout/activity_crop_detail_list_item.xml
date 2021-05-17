@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/textview_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:text="@string/ID"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_cropId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/textview_Id"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        tools:text="1234567890"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:layout_below="@id/textview_Id"
+        android:id="@+id/textview_planted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:text="@string/Planted"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:layout_below="@id/textview_Id"
+        android:id="@+id/textview_Date_Plantation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_toRightOf="@+id/textview_planted"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        tools:text="1234567890"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_purpose"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_planted"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="2"
+        tools:text="Lorem Ipsum is simply sha jsdnf jksndj laksnd skjncaj ksjan dkj ksankj sk c aksnskajdnj"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_acre"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_planted"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_purpose"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="1000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_pesticides"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_planted"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_acre"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="1000000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_fertilizers"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_planted"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_pesticides"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="1000000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_purpose"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="1"
+        android:text="@string/Duration"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+
+
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_purpose"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_duration"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        tools:text="3 months"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <View
+        android:id="@+id/dividerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/textview_time"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFF" />
+
+</RelativeLayout>

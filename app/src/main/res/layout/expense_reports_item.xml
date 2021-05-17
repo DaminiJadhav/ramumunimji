@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeParentVehicleItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/ic_default_profile_image"
+        android:visibility="gone"
+        app:civ_border_color="@color/colorGrey"
+        app:civ_border_width="@dimen/_2sdp" />
+
+
+    <ImageView
+        android:layout_width="@dimen/_11sdp"
+        android:layout_height="@dimen/_11sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_100sdp"
+        android:src="@drawable/ic_india"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textviewCustomerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Id : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:id="@+id/textviewId"
+                android:textSize="@dimen/_16sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textviewPurpose_hide"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:visibility="gone"
+            android:fontFamily="@font/myriadproboldsemiextended"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            tools:text="Shivaji Satham" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textviewPurpose"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="100" />
+
+            <TextView
+                android:id="@+id/textviewamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="$200"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:weightSum="1">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:text="100"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:id="@+id/textviewPurpose"-->
+<!--                android:textSize="@dimen/_14sdp"/>-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:text="$200"-->
+<!--                android:gravity="right"-->
+<!--                android:id="@+id/textviewamount"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:textSize="@dimen/_14sdp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:weightSum="1"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:id="@+id/textviewName"-->
+<!--                tools:text="Sugar"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:textSize="@dimen/_14sdp"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textviewdate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:gravity="right"-->
+<!--                android:singleLine="true"-->
+<!--                tools:text="07/07/2020"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:textSize="@dimen/_14sdp" />-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="Sugar" />
+
+            <TextView
+                android:id="@+id/textviewdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="07/07/2020"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#000"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

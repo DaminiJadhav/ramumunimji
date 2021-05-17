@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_ramumunimji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/colabreg"
+        android:text="@string/RAMU_MUNIMJI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp" />
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_46sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/textview_ramumunimji">
+
+        <LinearLayout
+            android:id="@+id/ll_outstanding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/imageview_outsnding"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@id/textview_ramumunimji"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/ic_outstanding"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewOutstanding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@id/imageview_outsnding"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/colabreg"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/menu_outstanding"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:id="@+id/imageviewOustMic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_toEndOf="@+id/textviewOutstanding"
+                android:layout_weight="2"
+                android:src="@drawable/ic_radio"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_outstanding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ll_outstanding"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_Debit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_outstanding"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/imageview_debit"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/ic_ticket"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewDebit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@id/imageview_outsnding"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/colabreg"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="@string/menu_sale"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:id="@+id/imageviewDevitMic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_toEndOf="@+id/textviewOutstanding"
+                android:layout_weight="2"
+                android:src="@drawable/ic_radio"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_debit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ll_Debit"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_Credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_debit"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/imageview_Credit"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/ic_sale"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewCredit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@id/imageview_outsnding"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/colabreg"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="@string/amount_received"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp" />
+
+            <ImageView
+                android:id="@+id/imageviewMicCredit"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_toEndOf="@+id/textviewOutstanding"
+                android:layout_weight="2"
+                android:src="@drawable/ic_radio"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_credit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ll_Credit"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_Expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_credit"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/imageview_Expenses"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/ic_expense"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewExpenses"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@id/imageview_outsnding"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:fontFamily="@font/colabreg"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="@string/expenses"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:id="@+id/imageviewMicExpense"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_toEndOf="@+id/textviewOutstanding"
+                android:layout_weight="2"
+                android:src="@drawable/ic_radio"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/ll_Expense"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageview_pray"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_pray"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_below="@id/divider_expenses" />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Welcome"
+            android:layout_below="@id/imageview_pray"
+            android:textColor="@color/white"
+            android:fontFamily="@font/colabreg"
+            android:textSize="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

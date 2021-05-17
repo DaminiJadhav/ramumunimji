@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <include
+        android:id="@+id/toolbartitle"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeSubmit"
+        android:layout_below="@+id/toolbartitle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_enterCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_Entername"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/Name_captial"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <!--<ImageView
+                    android:id="@+id/imageview_mic_enter_expense"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_57sdp"
+                    android:layout_toRightOf="@+id/textview_Entername"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:id="@+id/imageview_enterCustomer"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_user"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edittext_enterCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_enterCustomer"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/select_customer"
+                        android:maxLength="300"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_enterId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_enterCustomerName"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <!--<ImageView
+                    android:id="@+id/imageview_mic_enter_expense"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_57sdp"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:id="@+id/imageview_Id"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_id_contact" />
+
+                    <EditText
+                        android:id="@+id/edittext_enterId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@id/imageview_Id"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/enter_id"
+                        android:maxLength="300"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_vehicleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_enterId"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_vehicletype"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/vehicle_type_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <!--<ImageView
+                    android:id="@+id/imageview_mic_enter_expense"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_57sdp"
+                    android:layout_toRightOf="@+id/textview_vehicletype"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:id="@+id/imageview_VehicleType"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_tire"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edittext_VehilcleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_VehicleType"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/vehicle_type"
+                        android:maxLength="300"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_vehicleModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_vehicleType"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_vehicleModel"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/vehicle_model_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/imageview_mic_vehicleModel"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_vehicleModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@id/imageview_mic_vehicleModel"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_VehicleModel"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_steering_wheel" />
+
+                    <EditText
+                        android:id="@+id/edittext_VehilcleModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_VehicleModel"
+                        android:background="@null"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/vehicle_model"
+                        android:maxLength="300"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_cropName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_vehicleModel"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_vehicleNumber"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/vehicle_number_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/imageview_mic_vehicle_number"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_vehicleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imageview_mic_vehicle_number"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_vehilceNumber"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_car" />
+
+                    <EditText
+                        android:id="@+id/edittext_vehicleNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_vehilceNumber"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/vehicle_number"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_enterDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_cropName"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_date"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/service_date_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/imageview_mic_enter_Date"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/imageview_mic_enter_Date"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_57sdp"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_Servicedate"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:src="@drawable/ic_calendar_white" />
+
+                    <EditText
+                        android:id="@+id/edittext_enterServiceDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_41sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/imageview_Servicedate"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/service_date"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_enterAcres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_enterDate"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:id="@+id/textview_mileage"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/current_km_Milage_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/imageview_mic_Milage"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_mileage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imageview_mic_Milage"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_Acres"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_kilometer" />
+
+                    <EditText
+                        android:id="@+id/edittext_enterCurrentMilage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_Acres"
+                        android:background="@null"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/current_km_Milage"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_enterPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_enterAcres"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <!--<ImageView
+                    android:id="@+id/imageview_mic_enter_purpose"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/white_curve_corner_background"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageview_Period"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_calendar_white" />
+
+                    <EditText
+                        android:id="@+id/edittext_enterPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_Period"
+                        android:background="@null"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/three_months"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_nextServiceDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_enterPeriod"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:id="@+id/textview_nextServiceDate"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/service_date_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+                <!--<ImageView
+                    android:id="@+id/imageview_mic_enter_purpose"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />-->
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_nextServiceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_57sdp"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_nextServiceDate"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_calendar_white" />
+
+                    <EditText
+                        android:id="@+id/edittext_nextServiceDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_nextServiceDate"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/next_service_date"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_nextServiceDate"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textview_comment"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/myriadproboldsemiextended"
+                    android:singleLine="true"
+                    android:text="@string/comments"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/imageview_mic_comment"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_radio" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/textview_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imageview_mic_comment"
+                    android:background="@drawable/white_curve_corner_background">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imageview_comment"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@drawable/ic_comment" />
+
+                    <EditText
+                        android:id="@+id/edittext_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@+id/imageview_comment"
+                        android:background="@null"
+                        android:fontFamily="@font/myriadproboldsemiextended"
+                        android:hint="@string/Vehicle_service_particculars"
+                        android:maxLength="300"
+                        android:maxLines="3"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_7sdp"
+            android:fontFamily="@font/myriadprobold"
+            android:text="@string/submit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+    </RelativeLayout>
+</RelativeLayout>

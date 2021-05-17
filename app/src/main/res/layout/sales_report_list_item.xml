@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingTop="@dimen/_7sdp"
+    android:paddingRight="@dimen/_10sdp">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:text="@string/ID"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/textview_id"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        tools:text="1234567890"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/textview_purpose"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="2"
+        tools:text="Jan, 2020"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_litre"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_purpose"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="1000"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp" />
+
+    <!--    <TextView
+            android:visibility="gone"
+            android:id="@+id/textviewLiterSecond"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_id"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@id/textview_litre"
+            android:ellipsize="end"
+            android:fontFamily="@font/myriadproboldsemiextended"
+            android:gravity="center"
+            android:maxLines="1"
+            tools:text="1000000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />-->
+
+    <TextView
+        android:id="@+id/textviewLiterThree"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textview_litre"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="1000000"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_11sdp" />
+
+
+    <TextView
+        android:id="@+id/textviewDebit"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_id"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/textviewLiterThree"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="10000002767"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_purpose"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="1"
+        tools:text="21 Feb 2020"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/dividerOne"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_below="@+id/textview_purpose"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_toRightOf="@id/textview_date"
+        android:background="#FFF" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_purpose"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/dividerOne"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        tools:text="0.2:35PM"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp" />
+
+    <View
+        android:id="@+id/dividerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dividerOne"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/black" />
+
+</RelativeLayout>

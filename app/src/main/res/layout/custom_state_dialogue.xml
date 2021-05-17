@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/corner_layout"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:elevation="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_18sdp"
+                android:text="@string/select_state" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/linearlayout_header"
+        />
+
+    <EditText
+        android:layout_below="@id/divider"
+        android:id="@+id/edt_search_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/curve_background"
+        android:inputType="text"
+        android:maxLength="100"
+        android:drawableRight="@drawable/ic_search"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerview_contact"
+        android:layout_below="@+id/edt_search_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

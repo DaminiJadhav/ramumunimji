@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+<!--    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textviewTotalCustomer"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadprobold"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="@string/Total_Customers"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                tools:text="Total Customers" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textviewCustomerNumber"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/textviewTotalCustomer"
+                android:layout_marginLeft="@dimen/_27sdp"
+                android:background="@drawable/black_curve_corner_background"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:gravity="center"
+                android:hint="0"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                tools:text="0" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textviewTotalOutstanding"
+                android:layout_width="@dimen/_137sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadprobold"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="@string/Total_Outstanding"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                tools:text="Total Outstanding" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textviewTotal"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/textviewTotalOutstanding"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/black_curve_corner_background"
+                android:ellipsize="end"
+                android:fontFamily="@font/myriadproboldsemiextended"
+                android:gravity="center_vertical"
+                android:hint="0"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_33sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                tools:text="00000" />
+
+            <ImageView
+
+                android:visibility="gone"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@id/textviewTotalOutstanding"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_105sdp"
+                android:src="@drawable/ic_india" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textviewCustomerNumber"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="#000" />
+
+            <ImageView
+                android:id="@+id/imagviewFilter"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/divider"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_filter" />
+
+            <ImageView
+                android:id="@+id/imageviewMic"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/divider"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toLeftOf="@id/imagviewFilter"
+                android:src="@drawable/ic_radio" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/imageviewMic"
+                android:background="@drawable/white_curve_corner_background"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/edittext_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:hint="@string/search"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_17sdp" />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/dividerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/cardviewSearch"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="#000" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewCropCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/crop_customer_item"
+                android:layout_below="@id/dividerTwo" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textview_Please_add_customer"
+                android:layout_marginTop="@dimen/_180sdp"
+                android:layout_below="@id/dividerTwo"
+                android:layout_width="match_parent"
+                android:text="@string/Please_add_customer"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/myriadprobold"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+<!--    </androidx.core.widget.NestedScrollView>-->
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeParenOutstandingItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gradient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/ic_default_profile_image"
+        app:civ_border_color="@color/colorGrey"
+        app:civ_border_width="@dimen/_2sdp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textviewCustomerOutstanding"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_curve_corner_background"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_27sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:text="0" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="@dimen/_11sdp"
+        android:layout_height="@dimen/_11sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_100sdp"
+        android:src="@drawable/ic_india" />
+
+    <TextView
+        android:id="@+id/textviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/textviewCustomerOutstanding"
+        android:layout_toRightOf="@id/imageview_profile"
+        android:ellipsize="end"
+        android:fontFamily="@font/myriadproboldsemiextended"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        tools:text="Shivaji Satham" />
+
+    <View
+        android:id="@+id/dividerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="#000" />
+</RelativeLayout>
