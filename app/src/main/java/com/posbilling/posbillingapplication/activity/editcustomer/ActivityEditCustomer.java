@@ -99,6 +99,7 @@ import static com.posbilling.posbillingapplication.utility.DataState.stateNamesM
 
 public class ActivityEditCustomer extends BaseActivity implements OnStateListClick, EditCustomerContractor.View, OnContactListClick {
 
+
     private String customerId = "";
     private Realm realm;
     private SpeechRecognizer mSpeechRecognizer;
